@@ -1,0 +1,106 @@
+body{
+    font-family: 'Montserrat-Light';    
+}
+
+header {
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    background-color: #ddd;
+    box-shadow: 0 0 5px black;
+}
+
+header #wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header #wrapper #logo {  
+    float: left;
+    width: 28%;
+    margin-top: 8px;
+}
+
+header #wrapper #logo img {
+    width: 50px;
+}
+
+header #wrapper #logo a {
+    vertical-align: 10px;
+    text-decoration: none;
+    font-family: 'Montserrat-Medium';    
+    color: black;
+    text-shadow: 0px 0px 1px #333;
+    margin-left: 5px;
+    padding-right: 10px;
+}
+
+header #wrapper #menu {
+    padding-right: 30px;
+    margin: 0 auto;
+    float: right;
+    width: 65%;
+    margin-top: 15px;
+    text-align: right;
+}
+
+header #wrapper #menu ul {
+    margin: 0 auto;
+}
+
+header #wrapper #menu ul li {
+    display: inline-block;
+    margin: 0 0 0 25px;
+    font-family: 'Montserrat-Medium'; 
+    color: black;
+    text-shadow: 0px 0px 1px #333;
+}
+
+header #wrapper #menu-min {
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    header #wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header #wrapper #logo {
+        float: left;
+        width: 60%;
+        margin: 0 auto;
+        margin-left: 20%;
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    header #wrapper #menu{
+        display: none;
+    }
+    
+    header #wrapper #menu-min{
+        display: block;
+        float: left;
+        width: 20%;
+    }
+}
+
+@font-face{
+    font-family: Montserrat-Light;
+    src: url('../../assets/fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: Montserrat-Medium;
+    src: url('../../assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: Montserrat-Bold;
+    src: url('../../assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: WebSymbols-Regular;
+    src: url('../../assets/fonts/WebSymbols-Regular.otf') format('opentype');
+}
