@@ -1,12 +1,26 @@
 import React, { Component } from 'react'
-import './styles.css';
 import Logo from '../../assets/images/logo.png';
+import MenuIcon from '@material-ui/icons/Menu';
+import './styles.css';
+import { Hidden } from '@material-ui/core';
 
 class Page extends Component {
 
+    state={
+        showHideMenu:"hidden"
+    }
+
+    expandMenu = () =>{
+        let showHideMenu = this.state.showHideMenu;
+        showHideMenu = (showHideMenu === "hidden") ? "show" : "hidden";
+        this.setState({showHideMenu})
+        console.log(showHideMenu);
+    }
+
     render() {
+
         return <header>
-            <section id="wrapper">                
+            <section id="wrapper">
                 <div id="logo">
                     <img src={Logo} alt="logo" />
                     <a href="#" >FREDCODER</a>
@@ -18,9 +32,16 @@ class Page extends Component {
                         <li>CONTACT</li>
                     </ul>
                 </nav>
-                <div id="menu-min">
-                <span></span>
+                <div id="menu-min" onClick={this.expandMenu}>
+                    <MenuIcon></MenuIcon>
                 </div>
+                <nav id="menu-min-options" className={this.state.showHideMenu}>
+                    <ul>
+                        <li>ABOUT ME</li>
+                        <li>PROJECTS</li>
+                        <li>CONTACT</li>
+                    </ul>
+                </nav>
             </section>
         </header>
     }

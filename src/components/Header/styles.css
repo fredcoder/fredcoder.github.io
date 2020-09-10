@@ -1,5 +1,5 @@
-body{
-    font-family: 'Montserrat-Light';    
+body {
+    font-family: 'Montserrat-Light';
 }
 
 header {
@@ -15,24 +15,23 @@ header #wrapper {
     margin: 0 auto;
 }
 
-header #wrapper #logo {  
+header #wrapper #logo {
     float: left;
     width: 28%;
-    margin-top: 8px;
+    margin-top: 12px;
 }
 
 header #wrapper #logo img {
-    width: 50px;
+    width: 32px;
 }
 
 header #wrapper #logo a {
-    vertical-align: 10px;
+    vertical-align: 5px;
     text-decoration: none;
-    font-family: 'Montserrat-Medium';    
+    font-family: 'Montserrat-Medium';
     color: black;
-    text-shadow: 0px 0px 1px #333;
+    text-shadow: 0px 0px 0.7px #333;
     margin-left: 5px;
-    padding-right: 10px;
 }
 
 header #wrapper #menu {
@@ -40,7 +39,7 @@ header #wrapper #menu {
     margin: 0 auto;
     float: right;
     width: 65%;
-    margin-top: 15px;
+    margin-top: 16px;
     text-align: right;
 }
 
@@ -51,56 +50,99 @@ header #wrapper #menu ul {
 header #wrapper #menu ul li {
     display: inline-block;
     margin: 0 0 0 25px;
-    font-family: 'Montserrat-Medium'; 
+    font-family: 'Montserrat-Medium';
     color: black;
-    text-shadow: 0px 0px 1px #333;
+    text-shadow: 0px 0px 0.7px #333;
 }
 
 header #wrapper #menu-min {
     display: none;
 }
 
-@media only screen and (max-width: 600px){
+header #wrapper nav#menu-min-options {
+    
+}
+
+.hidden {
+    display:none;
+ }
+.show{
+    display:block;
+ }
+ 
+
+@media only screen and (max-width: 600px) {
     header #wrapper {
         width: 100%;
         margin: 0 auto;
     }
+
     header #wrapper #logo {
         float: left;
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
-        margin-left: 20%;
-        margin-top: 8px;
+        margin-left: 15%;
+        margin-top: 12px;
         text-align: center;
     }
 
-    header #wrapper #menu{
+    header #wrapper #menu {
         display: none;
     }
-    
-    header #wrapper #menu-min{
+
+    header #wrapper #menu-min {
         display: block;
         float: left;
-        width: 20%;
+        width: 15%;
+    }
+
+    header #wrapper #menu-min .MuiSvgIcon-root {
+        margin-top: 8px;
+        width: 80%;
+        height: 33px;
+    }
+
+    header #wrapper nav#menu-min-options ul li {
+        height: 28px;
+        background: #ddd;
+        font-family: 'Montserrat-Medium';
+        color: black;
+        text-shadow: 0px 0px 0.7px #333;
+        text-align: center;
+        padding-top: 10px;
+        margin-bottom: 1px;
+    }
+
+    /*header #wrapper nav#menu-min-options ul li:first-child {
+        border-top: 1px solid #333;
+    }*/
+
+    header #wrapper nav#menu-min-options {
+        clear: both;
+        float: left;
+        width: 100%;
+        margin-top: 6px;
+        box-shadow: 0px 2px 5px rgb(0 0 0 / 95%);
+        background: #bbb;
     }
 }
 
-@font-face{
+@font-face {
     font-family: Montserrat-Light;
     src: url('../../assets/fonts/Montserrat-Light.ttf') format('truetype');
 }
 
-@font-face{
+@font-face {
     font-family: Montserrat-Medium;
     src: url('../../assets/fonts/Montserrat-Medium.ttf') format('truetype');
 }
 
-@font-face{
+@font-face {
     font-family: Montserrat-Bold;
     src: url('../../assets/fonts/Montserrat-Bold.ttf') format('truetype');
 }
 
-@font-face{
+@font-face {
     font-family: WebSymbols-Regular;
     src: url('../../assets/fonts/WebSymbols-Regular.otf') format('opentype');
 }
