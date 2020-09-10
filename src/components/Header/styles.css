@@ -11,34 +11,42 @@ header {
 }
 
 header #wrapper {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 header #wrapper #logo {
-    float: left;
-    width: 28%;
-    margin-top: 12px;
+    display: none;
 }
 
 header #wrapper #logo img {
     width: 32px;
 }
 
-header #wrapper #logo a {
-    vertical-align: 5px;
+header #wrapper #title {
+    float: left;
+    width: 38%;
+    margin-top: 13px;
+}
+
+header #wrapper #title img {
+    width: 32px;
+}
+
+header #wrapper #title a {
+    vertical-align: 6px;
     text-decoration: none;
-    font-family: 'Montserrat-Medium';
+    font-family: 'Montserrat-Bold';
     color: black;
-    text-shadow: 0px 0px 0.7px #333;
-    margin-left: 5px;
+    /*text-shadow: 0px 0px 0.7px #333;*/
+    margin-left: 10px;
 }
 
 header #wrapper #menu {
     padding-right: 30px;
     margin: 0 auto;
     float: right;
-    width: 65%;
+    width: 55%;
     margin-top: 16px;
     text-align: right;
 }
@@ -50,9 +58,16 @@ header #wrapper #menu ul {
 header #wrapper #menu ul li {
     display: inline-block;
     margin: 0 0 0 25px;
-    font-family: 'Montserrat-Medium';
+    font-family: 'Montserrat-Bold';
     color: black;
-    text-shadow: 0px 0px 0.7px #333;
+    /*text-shadow: 0px 0px 0.7px #333;*/
+    cursor: pointer;
+}
+
+header #wrapper #menu ul li:hover {
+    font-family: 'Montserrat-Medium';
+    color: red;
+    text-shadow: 0px 0px 0.7px rgb(255, 40, 40);
 }
 
 header #wrapper #menu-min {
@@ -64,12 +79,15 @@ header #wrapper nav#menu-min-options {
 }
 
 .hidden {
-    display:none;
- }
-.show{
-    display:block;
- }
- 
+    display: none;
+    transition: 10s;
+}
+
+.show {
+    display: block;
+    transition: 10s;
+}
+
 
 @media only screen and (max-width: 600px) {
     header #wrapper {
@@ -78,12 +96,23 @@ header #wrapper nav#menu-min-options {
     }
 
     header #wrapper #logo {
+        display: block;
+        float: left;
+        width: 15%;
+        margin-top: 12px;
+        text-align: right;
+    }
+
+    header #wrapper #title {
         float: left;
         width: 70%;
         margin: 0 auto;
-        margin-left: 15%;
-        margin-top: 12px;
+        margin-top: 15px;
         text-align: center;
+    }
+
+    header #wrapper #title img {
+        display: none;
     }
 
     header #wrapper #menu {

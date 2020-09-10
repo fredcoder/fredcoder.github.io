@@ -6,14 +6,14 @@ import { Hidden } from '@material-ui/core';
 
 class Page extends Component {
 
-    state={
-        showHideMenu:"hidden"
+    state = {
+        showHideMenu: "hidden"
     }
 
-    expandMenu = () =>{
+    expandMenu = () => {
         let showHideMenu = this.state.showHideMenu;
         showHideMenu = (showHideMenu === "hidden") ? "show" : "hidden";
-        this.setState({showHideMenu})
+        this.setState({ showHideMenu })
         console.log(showHideMenu);
     }
 
@@ -23,13 +23,16 @@ class Page extends Component {
             <section id="wrapper">
                 <div id="logo">
                     <img src={Logo} alt="logo" />
-                    <a href="#" >FREDCODER</a>
+                </div>
+                <div id="title">
+                    <img src={Logo} alt="logo" />
+                    <a href="#" >Freddy | Developer</a>
                 </div>
                 <nav id="menu">
                     <ul>
-                        <li>ABOUT ME</li>
-                        <li>PROJECTS</li>
-                        <li>CONTACT</li>
+                        <li>About Me</li>
+                        <li>Projects</li>
+                        <li>Contact</li>
                     </ul>
                 </nav>
                 <div id="menu-min" onClick={this.expandMenu}>
@@ -37,9 +40,9 @@ class Page extends Component {
                 </div>
                 <nav id="menu-min-options" className={this.state.showHideMenu}>
                     <ul>
-                        <li>ABOUT ME</li>
-                        <li>PROJECTS</li>
-                        <li>CONTACT</li>
+                        <li>About Me</li>
+                        <li>Projects</li>
+                        <li>Contact</li>
                     </ul>
                 </nav>
             </section>
