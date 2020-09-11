@@ -1,13 +1,15 @@
 import React from 'react';
-import logo from './assets/images/logo.png';
 import './App.css';
 import Header from './components/Header';
+import Home from './components/Home';
+import AboutMe from './components/AboutMe';
 
 function App() {
   return (
     <React.Fragment>
       <Header />
-
+      <Home />
+      <AboutMe />
     </React.Fragment>
   );
 }

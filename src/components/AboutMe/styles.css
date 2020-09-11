@@ -1,0 +1,17 @@
+section#aboutMe{
+    background-color: black;
+    color: white;
+    padding: 70px 20px;
+}
+
+section#aboutMe img{
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border-radius: 50%;
+}
+
+section#aboutMe p{ 
+    text-align: justify;
+}
