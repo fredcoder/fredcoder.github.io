@@ -20,11 +20,11 @@ class Page extends Component {
         return <React.Fragment>
             <section id="aboutMe" data-aos="fade-up">
                 <section id="wrapper">
-                    <img src={photo} alt="photo" />
-                    <h1 id="title">
+                    <img src={photo} alt="photo" data-aos="fade-up"/>
+                    <h1 id="title" data-aos="fade-up">
                         About Me
                     </h1>
-                    <p id="description">
+                    <p id="description" data-aos="fade-up">
                         I am a Full Stack Developer and system administrator with over 6+ years of experience in software engineering and developing new features and apps for different products and companies by using the best programming practices such as design patterns and readable documentation.
                     </p>
                 </section>

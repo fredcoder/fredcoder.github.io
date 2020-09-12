@@ -16,7 +16,7 @@ section#home #wrapper #description {
     font-family: 'Montserrat-Light';
     font-size: x-large;
     letter-spacing: 0px;
-    word-spacing: 5px;
+    word-spacing: 0px;
     line-height: 28px;
 }
 
@@ -29,11 +29,11 @@ section#home #wrapper #description a {
 @media only screen and (max-width: 600px) {
 
     section#home #wrapper {
-        margin: 40% 12% 50% 12%;
+        margin: 40% 12% 24% 12%;
     }
 
     section#home #wrapper h1 {
-        font-size: xxx-large;
+        font-size: xx-large;
         text-align: center;
     }
 

@@ -17,10 +17,10 @@ section#aboutMe::before {
 }  
 
 section#aboutMe #wrapper{
-    color: white;
-    padding: 20% 12% 200% 12%;
+    color: #fff;
+    /*padding: 18% 12% 50%;
     border-top-left-radius: 55%;
-    background: black;
+    background: #000;*/
 }
 
 section#aboutMe #wrapper h1 {
@@ -30,10 +30,9 @@ section#aboutMe #wrapper h1 {
 }
 
 section#aboutMe img{
-    width: 35%;
+    width: 20%;
     display: block;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
     border-radius: 50%;
 }
 
@@ -42,7 +41,7 @@ section#aboutMe #description{
     font-family: 'Montserrat-Light';
     font-size: x-large;
     letter-spacing: 0px;
-    word-spacing: 5px;
+    word-spacing: 0px;
     line-height: 28px;
 }
 
@@ -50,6 +49,18 @@ section#aboutMe #description{
 @media only screen and (max-width:600px)
 {
     section#aboutMe #wrapper{
-        
+        padding: 20% 12% 50% 12%;
+    }
+
+    section#aboutMe img{
+        width: 35%;
+    }
+
+    section#aboutMe #wrapper h1 {
+        font-size: xx-large;
+    }
+    
+    section#aboutMe #description{ 
+        font-size: larger;
     }
 }

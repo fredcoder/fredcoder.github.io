@@ -19,7 +19,7 @@ class Page extends Component {
         return <section id="home">
             <section id="wrapper">
                 <h1 id="title">
-                    Hi!<br />I'm Freddy
+                    Hi! I'm Freddy
                 </h1>
                 <p id="description">
                     I am a systems engineer with years of experience as a full stack developer.

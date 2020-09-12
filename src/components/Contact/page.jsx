@@ -19,7 +19,7 @@ class Page extends Component {
 
         return <React.Fragment>
             <section id="contact" data-aos="fade-up">
-                <section id="wrapper">                    
+                <section id="wrapper" data-aos="fade-up">
                     <h1 id="title">
                         Contact
                     </h1>

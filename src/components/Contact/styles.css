@@ -12,13 +12,15 @@ section#contact::before {
     -webkit-transform: skewY(-10deg);
     transform: skewY(-10deg);
     background-color: black;
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    /*-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);*/
 }  
 
 section#contact #wrapper{
     color: white;
-    padding: 25% 12%;
+    padding: 25% 12% 30% 12%;
+    background: black;
+    border-top-left-radius: 60%;
 }
 
 section#contact #wrapper h1 {
@@ -49,5 +51,17 @@ section#contact #description{
 {
     section#contact #wrapper{
         
+    }
+
+    section#contact #wrapper{
+        padding: 25% 12%;
+    }
+
+    section#contact #wrapper h1 {
+        font-size: xx-large;
+    }
+    
+    section#contact #description{
+        font-size: larger;
     }
 }
