@@ -1,4 +1,6 @@
-section#projects {}
+section#projects {
+    height: 110vh;
+}
 
 section#projects::before {
     content: "";
@@ -10,8 +12,8 @@ section#projects::before {
     -webkit-transform: skewY(-10deg);
     transform: skewY(-10deg);
     background-color: white;
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    /*-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);*/
 }
 
 section#projects #wrapper {
@@ -30,6 +32,12 @@ section#projects img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+section#projects #wrapper h2 {
+    font-size: x-large;
+    text-align: center;
+    margin: 5% 0;
 }
 
 section#projects p {

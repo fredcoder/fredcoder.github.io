@@ -67,6 +67,15 @@ header #wrapper #menu-max ul li {
     cursor: pointer;
 }
 
+header #wrapper #menu-max ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 header #wrapper #menu-max ul li:hover {
     font-family: 'Montserrat-Medium';
     color: red;
@@ -92,7 +101,7 @@ nav#menu-min-options {
 }
 
 @media only screen and (max-width: 600px) {
-    
+
     header #wrapper {
         width: 100%;
         margin: 0 auto;
@@ -145,7 +154,7 @@ nav#menu-min-options {
         margin-bottom: 1px;
     }
 
-    nav#menu-min-options ul li a{
+    nav#menu-min-options ul li a {
         text-decoration: none;
         color: black;
         margin: 0px;

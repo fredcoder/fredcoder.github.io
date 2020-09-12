@@ -1,4 +1,6 @@
-section#home {}
+section#home {
+    height: 80vh;
+}
 
 section#home #wrapper {
     margin: 14% 12% 52% 12%;
@@ -18,6 +20,12 @@ section#home #wrapper #description {
     line-height: 28px;
 }
 
+section#home #wrapper #description a {
+    font-family: 'Montserrat-Bold';
+    text-decoration: none;
+    color: black;
+}
+
 @media only screen and (max-width: 600px) {
 
     section#home #wrapper {
@@ -25,7 +33,7 @@ section#home #wrapper #description {
     }
 
     section#home #wrapper h1 {
-        font-size: xx-large;
+        font-size: xxx-large;
         text-align: center;
     }
 
