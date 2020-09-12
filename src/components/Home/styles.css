@@ -21,11 +21,12 @@ section#home #wrapper #description {
 @media only screen and (max-width: 600px) {
 
     section#home #wrapper {
-        margin: 40% 12% 80% 12%;
+        margin: 40% 12% 50% 12%;
     }
 
     section#home #wrapper h1 {
         font-size: xx-large;
+        text-align: center;
     }
 
     section#home #wrapper #description {

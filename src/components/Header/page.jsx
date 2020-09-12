@@ -30,9 +30,9 @@ class Page extends Component {
                     </div>
                     <nav id="menu-max">
                         <ul>
-                            <li>About Me</li>
-                            <li>Projects</li>
-                            <li>Contact</li>
+                            <li><a href="#aboutMe">About Me</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                     <div id="menu-min" onClick={this.expandMenu}>
@@ -43,9 +43,9 @@ class Page extends Component {
             <div className="clearfix"></div>
             <nav id="menu-min-options" className={this.state.showHideMenu}>
                 <ul>
-                    <li>About Me</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li onClick={this.expandMenu}><a href="#aboutMe">About Me</a></li>
+                    <li onClick={this.expandMenu}><a href="#projects">Projects</a></li>
+                    <li onClick={this.expandMenu}><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div className="clearfix"></div>

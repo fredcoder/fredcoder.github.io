@@ -17,12 +17,19 @@ class Page extends Component {
 
     render() {
 
-        return <section id="aboutMe" data-aos="fade-up">
-            <img src={photo} alt="photo"/>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis aliquet ex, in aliquet sapien euismod a. Pellentesque consequat egestas diam, et luctus sem pulvinar in. Suspendisse potenti. Nulla a tempus dolor. Morbi laoreet metus ut fringilla tincidunt. Nam enim lorem, fringilla at est non, vulputate lacinia purus. Cras accumsan nunc eget fringilla ullamcorper. Vivamus blandit pellentesque massa, eget dignissim nibh bibendum non. Nunc in tempus enim. Aliquam faucibus nisi a nisl molestie, ut porta leo ultricies. Aliquam vel turpis tortor. Proin commodo faucibus neque, non blandit mi imperdiet ac. Mauris placerat ligula iaculis lobortis viverra. Vestibulum fermentum quis sapien nec blandit.
-                </p>
+        return <React.Fragment>
+            <section id="aboutMe" data-aos="fade-up">
+                <section id="wrapper">
+                    <img src={photo} alt="photo" />
+                    <h1 id="title">
+                        About Me
+                    </h1>
+                    <p id="description">
+                        I am a Full Stack Developer and system administrator with over 6+ years of experience in software engineering and developing new features and apps for different products and companies by using the best programming practices such as design patterns and readable documentation.
+                    </p>
+                </section>
             </section>
+        </React.Fragment>
     }
 }
 

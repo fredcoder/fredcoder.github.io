@@ -4,11 +4,13 @@ body {
 
 header {
     position: fixed;
+    z-index: 2;
+    top: 0;
     margin: 0 auto;
     width: 100%;
     height: 50px;
     background-color: #fff;
-    /*box-shadow: 0 0 5px black;*/
+    box-shadow: 0 0 5px black;
 }
 
 header #wrapper {
@@ -37,7 +39,8 @@ header #wrapper #title img {
 header #wrapper #title a {
     vertical-align: 6px;
     text-decoration: none;
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat-Medium';
+    font-size: larger;
     color: black;
     margin-left: 10px;
 }
@@ -47,7 +50,7 @@ header #wrapper #menu-max {
     margin: 0 auto;
     float: right;
     width: 55%;
-    margin-top: 16px;
+    margin-top: 14px;
     text-align: right;
 }
 
@@ -58,7 +61,8 @@ header #wrapper #menu-max ul {
 header #wrapper #menu-max ul li {
     display: inline-block;
     margin: 0 0 0 25px;
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat-Medium';
+    font-size: larger;
     color: black;
     cursor: pointer;
 }
@@ -79,12 +83,12 @@ nav#menu-min-options {
 
 .hidden {
     margin-top: -80px;
-    transition: 1s;
+    transition: 0.4s;
 }
 
 .show {
     margin-top: 50px;
-    transition: 1s;
+    transition: 0.4s;
 }
 
 @media only screen and (max-width: 600px) {
@@ -106,7 +110,7 @@ nav#menu-min-options {
         float: left;
         width: 70%;
         margin: 0 auto;
-        margin-top: 15px;
+        margin-top: 12px;
         text-align: center;
     }
 
@@ -141,6 +145,15 @@ nav#menu-min-options {
         margin-bottom: 1px;
     }
 
+    nav#menu-min-options ul li a{
+        text-decoration: none;
+        color: black;
+        margin: 0px;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
     nav#menu-min-options ul li:first-child {
         border-top: 1px solid #bbb;
     }
@@ -151,5 +164,8 @@ nav#menu-min-options {
         width: 100%;
         box-shadow: 0px 1px 10px rgb(0 0 0 / 45%);
         background: #bbb;
+        position: fixed;
+        z-index: 1;
+        top: 0;
     }
 }

@@ -1,0 +1,42 @@
+section#projects {}
+
+section#projects::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    -webkit-transform: skewY(-10deg);
+    transform: skewY(-10deg);
+    background-color: white;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+section#projects #wrapper {
+    color: black;
+    padding: 20% 12% 0% 12%;
+}
+
+section#projects #wrapper h1 {
+    font-size: xxx-large;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+section#projects img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+section#projects p {
+    text-align: justify;
+}
+
+
+@media only screen and (max-width:600px) {
+    section#projects #wrapper {}
+}
