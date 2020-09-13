@@ -27,23 +27,69 @@ section#projects #wrapper h1 {
     margin-bottom: 5%;
 }
 
-section#projects img {
+section#projects #wrapper .project-top{
+    float: left;
+    width: 48%;
+    margin: 0 2% 0 0%;
+}
+
+section#projects #wrapper .project-top img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 90%;
 }
 
-section#projects #wrapper h2 {
-    font-size: x-large;
+section#projects #wrapper .project-bottom{
+    float: left;
+    width: 48%;
+    margin: 0 0% 0 2%;
+}
+
+section#projects #wrapper .project-bottom h2 {
+    font-size: xx-large;
     text-align: center;
     margin: 5% 0;
 }
 
-section#projects p {
+section#projects #wrapper .project-bottom .description{
     text-align: justify;
+    font-size: larger;
+    margin-bottom: 12px;
+}
+section#projects #wrapper .project-bottom .technologies {
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 12px;
 }
 
+section#projects #wrapper .project-bottom .link {
+    font-family: Montserrat-Medium;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px 5px;
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 3px #000000ba;
+}
+
+section#projects #wrapper .project-bottom .link:hover {
+    background:  black;
+    color: white;
+}
+
+section#projects #wrapper .project-bottom .technologies span{
+    margin-left: 5px;
+    vertical-align: text-top;
+}
+
+section#projects #wrapper .project-bottom .technologies svg {
+    margin: 0 0px 0 7px;
+    font-size: x-large;
+}
 
 @media only screen and (max-width:600px) {
     section#projects {
@@ -57,12 +103,19 @@ section#projects p {
     section#projects #wrapper h1 {
         font-size: xx-large;
     }
-    
-    section#projects img {
 
+    section#projects #wrapper .project-bottom h2 {
+        font-size: x-large;
+        text-align: center;
+        margin: 5% 0;
+    }
+
+    section#projects #wrapper .project-top{
+        width: 100%;
     }
     
-    section#projects #wrapper h2 {
-        font-size: larger;
+    section#projects #wrapper .project-bottom{
+        width: 100%;
     }
+
 }
