@@ -20,6 +20,7 @@ class Page extends Component {
         return <React.Fragment>
             <section id="aboutMe" data-aos="fade-up">
                 <section id="wrapper">
+                    <div id="aboutMe-mark"></div>
                     <img src={photo} alt="photo" data-aos="fade-up"/>
                     <h1 id="title" data-aos="fade-up">
                         About Me

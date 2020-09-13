@@ -1,5 +1,5 @@
 section#projects {
-    height: 110vh;
+    height: 180vh;
 }
 
 section#projects::before {
@@ -11,7 +11,7 @@ section#projects::before {
     top: 0;
     -webkit-transform: skewY(-10deg);
     transform: skewY(-10deg);
-    background-color: white;
+    /*background-color: white;*/
     /*-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);*/
 }
@@ -46,9 +46,23 @@ section#projects p {
 
 
 @media only screen and (max-width:600px) {
-    section#projects #wrapper {}
+    section#projects {
+        height: 110vh;
+    }
 
     section#projects #wrapper {
         padding: 20% 12% 0% 12%;
+    }
+
+    section#projects #wrapper h1 {
+        font-size: xx-large;
+    }
+    
+    section#projects img {
+
+    }
+    
+    section#projects #wrapper h2 {
+        font-size: larger;
     }
 }
