@@ -1,4 +1,4 @@
-section#contact{
+section#contact {
     height: 110vh;
 }
 
@@ -15,9 +15,9 @@ section#contact::before {
     box-shadow: 0px 0px 10px #0000008f;
     /*-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);*/
-}  
+}
 
-section#contact #wrapper{
+section#contact #wrapper {
     color: white;
     padding: 14% 12% 30% 12%;
     background: black;
@@ -30,15 +30,64 @@ section#contact #wrapper h1 {
     margin-bottom: 5%;
 }
 
-section#contact img{
-    width: 35%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    border-radius: 50%;
+section#contact #wrapper form {
+    overflow: hidden;
+    margin-bottom: 40px;
 }
 
-section#contact #description{ 
+section#contact #wrapper form input,
+section#contact #wrapper form textarea {
+    display: block;
+    font-family: Montserrat-Light;
+    font-size: large;
+    width: 100%;
+    max-width: -webkit-fill-available !important;
+    height: 35px;
+    padding-left: 8px;
+    margin-bottom: 4%;
+}
+
+section#contact #wrapper form input:focus,
+section#contact #wrapper form textarea:focus {
+    outline-style: none;
+}
+
+section#contact #wrapper form input[type="text"],
+section#contact #wrapper form input[type="email"] {
+    float: left;
+    width: 46%;
+}
+
+section#contact #wrapper form input[type="text"] {
+    margin-right: 3.7%;
+}
+
+section#contact #wrapper form textarea {
+    width: 100% !important;
+    min-height: 100px;
+    padding-top: 6px;
+}
+
+section#contact #wrapper form input[type="submit"] {
+    background: white;
+    color: black;
+    font-family: Montserrat-Bold;
+    box-shadow: 0 0 4px white;
+    cursor: pointer;
+    margin-top: 6%;
+    height: 50px;
+}
+
+section#contact #wrapper form input[type="submit"]:hover {
+    background: blue;
+    color: white;
+}
+
+section#contact hr {
+    margin-bottom: 20px;
+}
+
+section#contact #description {
     text-align: justify;
     font-family: 'Montserrat-Light';
     font-size: x-large;
@@ -47,22 +96,41 @@ section#contact #description{
     line-height: 28px;
 }
 
+section#contact #description span {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
 
-@media only screen and (max-width:600px)
-{
-    section#contact #wrapper{
-        
-    }
+section#contact #description span svg {
+    font-size: xxx-large;
+    text-decoration: none;
+    margin: 0 2%;
+    color: white;
+}
 
-    section#contact #wrapper{
+@media only screen and (max-width:600px) {
+    section#contact #wrapper {}
+
+    section#contact #wrapper {
         padding: 25% 12%;
     }
 
     section#contact #wrapper h1 {
         font-size: xx-large;
     }
-    
-    section#contact #description{
+
+    section#contact #wrapper form input[type="text"],
+    section#contact #wrapper form input[type="email"] {
+        float: none;
+        width: 100%;
+    }
+
+    section#contact #wrapper form input[type="text"] {
+        margin-right: 0%;
+    }
+
+    section#contact #description {
         font-size: larger;
     }
 }
