@@ -9,7 +9,7 @@ header {
     margin: 0 auto;
     width: 100%;
     height: 50px;
-    background-color: #fff;
+    background-color: var(--fifth-color);
 }
 
 header #wrapper {
@@ -41,7 +41,7 @@ header #wrapper #title a {
     text-decoration: none;
     font-family: 'Montserrat-Medium';
     font-size: larger;
-    color: black;
+    color: var(--first-color);
     margin-left: 10px;
 }
 
@@ -66,14 +66,13 @@ header #wrapper #menu-max ul li {
     padding: 0 12px 0 12px;
     font-family: 'Montserrat-Medium';
     font-size: larger;
-    color: black;
     cursor: pointer;
     transform: skewX(-10deg);
 }
 
 header #wrapper #menu-max ul li a {
     text-decoration: none;
-    color: black;
+    color: var(--fourth-color);
     margin: 0px;
     display: block;
     width: 100%;
@@ -83,12 +82,13 @@ header #wrapper #menu-max ul li a {
 }
 
 header #wrapper #menu-max ul li:hover {
-    background: black;
-    box-shadow: 0px 0px 4px #0000008f;
+    /*background: var(--first-color);
+    box-shadow: 0px 0px 4px #0000008f;*/
 }
 
 header #wrapper #menu-max ul li:hover a {
-    color: white;
+    color: var(--second-color);
+    ;
 }
 
 header #wrapper #menu-min {
@@ -99,7 +99,7 @@ nav#menu-min-options {
     float: left;
 }
 
-#shadow{
+#shadow {
     position: fixed;
     z-index: 1;
     top: 0;
@@ -110,7 +110,7 @@ nav#menu-min-options {
     box-shadow: 0 0 5px black;
 }
 
-#hidder{
+#hidder {
     position: absolute;
     width: 100%;
     height: 8px;
@@ -173,14 +173,18 @@ nav#menu-min-options {
     }
 
     nav#menu-min-options ul li {
-        height: 28px;
-        background: #fff;
+        height: 30px;
+        /* width: 76%; */
+        background: var(--fifth-color);
         font-family: 'Montserrat-Medium';
-        color: black;
-        text-shadow: 0px 0px 0.7px #333;
+        color: var(--fourth-color);
+        /* text-shadow: 0px 0px 0.7px #333; */
         text-align: center;
-        padding-top: 10px;
-        margin-bottom: 1px;
+        padding-top: 8px;
+        margin: 0 auto;
+        /* margin-bottom: 1px; */
+        list-style: none;
+        /* border-top: 1px solid;*/
     }
 
     nav#menu-min-options ul li a {
@@ -201,7 +205,7 @@ nav#menu-min-options {
         float: left;
         width: 100%;
         box-shadow: 0px 1px 10px rgb(0 0 0 / 45%);
-        background: #bbb;
+        background: var(--fifth-color);
         position: fixed;
         z-index: 1;
         top: 0;
