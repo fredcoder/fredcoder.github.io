@@ -50,21 +50,25 @@ class Page extends Component {
                         Contact
                     </h1>
                     <form
-                      onSubmit={this.submitForm}
-                      action="https://formspree.io/meqpjajk"
-                      method="POST"
-                      id="contact-form" 
-                      data-aos="fade-up">
-                        <input type="text" name="name" placeholder="Your Name"/>
-                        <input type="email" name="_replyto" placeholder="Your Email"/>
-                        <textarea name="message"  placeholder="Message"></textarea>
-                        <input type="submit" value="Send"/>
+                        onSubmit={this.submitForm}
+                        action="https://formspree.io/meqpjajk"
+                        method="POST"
+                        id="contact-form"
+                        data-aos="fade-up">
+                        <input type="text" name="name" placeholder="Your Name" />
+                        <input type="email" name="_replyto" placeholder="Your Email" />
+                        <textarea name="message" placeholder="Message" data-gramm_editor="false"></textarea>
+                        <input type="submit" value="Send" />
                     </form>
-                    <hr  data-aos="fade-up"/>
-                    <p id="description" data-aos="fade-up">
+                    <hr />
+                    <p id="description">
                         <span>
                             <a href="https://www.linkedin.com/in/freddy-ernesto-clavijo-fernandez-3b144453/"><FontAwesomeIcon icon={faLinkedin} /></a>
+                        </span>
+                        <span>
                             <a href="https://www.instagram.com/fredcoder/"><FontAwesomeIcon icon={faInstagram} /></a>
+                        </span>
+                        <span>
                             <a href="https://github.com/fredcoder"><FontAwesomeIcon icon={faGithub} /></a>
                         </span>
                     </p>
