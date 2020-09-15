@@ -30,7 +30,7 @@ class Page extends Component {
                     <p id="description" data-aos="fade-up">
                         I am a Full Stack Developer and system administrator with over 6+ years of experience in software engineering and developing new features and apps for different products and companies by using the best programming practices such as design patterns and readable documentation.
                     </p>
-                    <h2 id="title" data-aos="fade-up">
+                    {/*<h2 id="title" data-aos="fade-up">
                         Skills
                     </h2>
                     <p id="skills" data-aos="fade-up">
@@ -40,7 +40,7 @@ class Page extends Component {
                             <FontAwesomeIcon icon={faCss3Alt} />
                             <FontAwesomeIcon icon={faReact} />
                         </span>
-                    </p>
+                    </p>*/}
                 </section>
             </section>
         </React.Fragment>
