@@ -1,14 +1,17 @@
 section#home {
-    height: 80vh;
+    height: 110vh;
 }
 
 section#home #wrapper {
-    margin: 14% 12% 52% 12%;
-    text-align: justify;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 76%;
 }
 
 section#home #wrapper h1 {
-    margin: 80px 0 30px 0;
+    margin-bottom: 30px;
     font-size: xxx-large;
 }
 
@@ -29,7 +32,6 @@ section#home #wrapper #description a {
 @media only screen and (max-width: 600px) {
 
     section#home #wrapper {
-        margin: 40% 12% 24% 12%;
     }
 
     section#home #wrapper h1 {

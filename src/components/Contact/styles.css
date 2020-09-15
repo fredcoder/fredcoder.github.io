@@ -106,12 +106,12 @@ section#contact hr {
 }
 
 section#contact #description {
-
+    text-align: center;
 }
 
 section#contact #description span {
     margin: 0 auto;
-    margin: 5% 1%;
+    margin: 6% 1%;
     text-align: center;
     display: inline-block;
     width: 30%;
@@ -146,5 +146,9 @@ section#contact #description span svg {
 
     section#contact #description {
         font-size: larger;
+    }
+
+    section#contact #description span {
+        margin: 12% 1%;
     }
 }
