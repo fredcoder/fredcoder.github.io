@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+:root {
+  --first-color: #005C7B;
+  --second-color: #FC4A1A;
+  --third-color: #05BAC5;
+  --fourth-color: #000000;
+  --fifth-color: #ffffff;
+}
+
 .App {
   margin:0 auto;
   width: 1200px;
