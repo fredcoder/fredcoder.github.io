@@ -27,6 +27,12 @@ section#projects #wrapper h1 {
     margin-bottom: 5%;
 }
 
+section#projects #wrapper h2 {
+    font-size: x-large;
+    text-align: center;
+    margin: 5% 0;
+}
+
 section#projects #wrapper .project-top{
     float: left;
     width: 48%;
@@ -47,35 +53,29 @@ section#projects #wrapper .project-bottom{
     overflow: hidden;
 }
 
-section#projects #wrapper .project-bottom h2 {
-    font-size: x-large;
-    text-align: center;
-    margin: 5% 0;
-}
-
 section#projects #wrapper .project-bottom .description{
     text-align: justify;
-    font-size: larger;
+    font-size: large;
     margin-bottom: 12px;
 }
+
 section#projects #wrapper .project-bottom .technologies {
-    text-align: center;
-    font-size: larger;
+    text-align: left;
+    font-size: large;
     margin-bottom: 12px;
 }
 
 section#projects #wrapper .project-bottom .link {
     font-family: Montserrat-Medium;
-    color: black;
+    color: var(--fifth-color);
     text-align: center;
     text-decoration: none;
-    padding: 3px 5px;
-    margin: 0 auto;
-    margin-bottom: 5px;
+    /*margin: 0 auto;*/
     display: block;
+    background-color: var(--third-color);
+    height: 40px;
     width: 50%;
-    background-color: #fff;
-    box-shadow: 0 0 3px #000000ba;
+    line-height: 250%;
 }
 
 section#projects #wrapper .project-bottom .link:hover {
@@ -91,6 +91,7 @@ section#projects #wrapper .project-bottom .technologies span{
 section#projects #wrapper .project-bottom .technologies svg {
     margin: 0 0px 0 7px;
     font-size: x-large;
+    color: var(--second-color);
 }
 
 @media only screen and (max-width:600px) {
@@ -112,6 +113,20 @@ section#projects #wrapper .project-bottom .technologies svg {
     
     section#projects #wrapper .project-bottom{
         width: 100%;
+    }
+
+    section#projects #wrapper .project-bottom .description{
+        text-align: justify;
+        font-size: medium;
+        margin-top: 12px;
+    }
+
+    section#projects #wrapper .project-bottom .technologies {
+        text-align: center;
+    }
+
+    section#projects #wrapper .project-bottom .link {
+        margin: 0 auto;
     }
 
 }
