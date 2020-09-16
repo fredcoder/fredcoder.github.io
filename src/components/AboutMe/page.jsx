@@ -27,15 +27,17 @@ class Page extends Component {
                     <h1 id="title" data-aos="fade-up">
                         About Me
                     </h1>
-                    
-                    <p id="description" data-aos="fade-up">
-                    <hr/>
+                    <div data-aos="fade-up">
+                        <hr />
+                        <p id="description">
+                            I am a Full Stack Developer and system administrator with over 6+ years of experience in software engineering and developing new features and apps for different products and companies by using the best programming practices such as design patterns and readable documentation.
+                        <br /><br />
                         I am a Full Stack Developer and system administrator with over 6+ years of experience in software engineering and developing new features and apps for different products and companies by using the best programming practices such as design patterns and readable documentation.
-                        <br/><br/>
+                        <br /><br />
                         I am a Full Stack Developer and system administrator with over 6+ years of experience in software engineering and developing new features and apps for different products and companies by using the best programming practices such as design patterns and readable documentation.
-                        <br/><br/>
-                        I am a Full Stack Developer and system administrator with over 6+ years of experience in software engineering and developing new features and apps for different products and companies by using the best programming practices such as design patterns and readable documentation.
-                    </p>                    
+                    </p>
+                    </div>
+
                     {/*<h2 id="title" data-aos="fade-up">
                         Skills
                     </h2>

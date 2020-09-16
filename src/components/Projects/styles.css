@@ -27,11 +27,12 @@ section#projects #wrapper h1 {
 }
 
 section#projects #wrapper hr {
+    background-color: var(--third-color);
+    border: 1px solid var(--third-color);
     color: var(--third-color);
-    border: 1px solid;
     margin: 0 auto;
     margin-bottom: 5%;
-    width: 50%;
+    width: 50%;    
 }
 
 section#projects #wrapper h2 {
@@ -69,20 +70,22 @@ section#projects #wrapper .project-bottom .description {
 section#projects #wrapper .project-bottom .technologies {
     text-align: left;
     font-size: x-large;
+    font-weight: 700;
     margin-bottom: 12px;
 }
 
 section#projects #wrapper .project-bottom .link {
     font-family: Montserrat-Medium;
-    color: var(--fifth-color);
+    font-size: larger;
+    color: var(--fourth-color);
     text-align: center;
     text-decoration: none;
-    /*margin: 0 auto;*/
+    /* margin: 0 auto; */
     display: block;
     background-color: var(--third-color);
     height: 40px;
     width: 50%;
-    line-height: 250%;
+    line-height: 200%;
 }
 
 section#projects #wrapper .project-bottom .link:hover {
@@ -92,13 +95,21 @@ section#projects #wrapper .project-bottom .link:hover {
 
 section#projects #wrapper .project-bottom .technologies span {
     margin-left: 5px;
-    vertical-align: text-top;
+    vertical-align: text-top;    
 }
 
 section#projects #wrapper .project-bottom .technologies svg {
     margin: 0 0px 0 7px;
     font-size: x-large;
     color: var(--second-color);
+}
+
+@media only screen and (max-width:1200px) {
+
+    section#projects #wrapper .project-bottom .description,
+    section#projects #wrapper .project-bottom .technologies {
+        font-size: larger;
+    }
 }
 
 @media only screen and (max-width:600px) {
@@ -123,31 +134,30 @@ section#projects #wrapper .project-bottom .technologies svg {
         width: 100%;
     }
 
+    section#projects #wrapper .project-top img {
+        width: 100%;
+    }
+
     section#projects #wrapper .project-bottom {
         width: 100%;
     }
 
     section#projects #wrapper .project-bottom .description {
-        font-size: medium;
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
     section#projects #wrapper .project-bottom .technologies {
-        font-size: medium;
         text-align: center;
+    }
+
+    section#projects #wrapper .project-bottom .description,
+    section#projects #wrapper .project-bottom .technologies {
+        font-size: large;
     }
 
     section#projects #wrapper .project-bottom .link {
         margin: 0 auto;
     }
 
-}
-
-@media only screen and (max-width:1200px) {
-
-    section#projects #wrapper .project-bottom .description,
-    section#projects #wrapper .project-bottom .technologies {
-        font-size: larger;
-    }
 }

@@ -72,6 +72,12 @@ section#contact #wrapper form {
     padding-bottom: 40px;
 }
 
+section#contact #wrapper form input[type="text"],
+section#contact #wrapper form input[type="email"],
+section#contact #wrapper form textarea {
+    padding-left: 3%;
+}
+
 section#contact #wrapper form input,
 section#contact #wrapper form textarea {
     display: block;
@@ -80,11 +86,13 @@ section#contact #wrapper form textarea {
     width: 100%;
     max-width: -webkit-fill-available !important;
     height: 35px;
-    padding-left: 3%;
+    /*Apple styles*/
     margin-bottom: 4%;
+    border-radius: 0 !important;
 }
 
-section#contact #wrapper form input:focus,
+section#contact #wrapper form input[type="text"] :focus,
+section#contact #wrapper form input[type="email"] :focus,
 section#contact #wrapper form textarea:focus {
     outline-style: none;
 }
@@ -94,6 +102,8 @@ section#contact #wrapper form textarea {
     height: 100px !important;
     padding-top: 6px;
     clear: both;
+    /*Apple styles*/
+    border-radius: 0 !important;
 }
 
 section#contact #wrapper form input[type="submit"] {
@@ -103,14 +113,42 @@ section#contact #wrapper form input[type="submit"] {
     font-size: larger;
     cursor: pointer;
     margin: 0 auto;
+    margin-top: 30px;
     height: 40px;
     width: 50%;
     border: 0;
+    /*Apple styles*/
+    border-radius: 0 !important;
+    -webkit-appearance: none !important;
 }
 
 section#contact #wrapper form input[type="submit"]:hover {
     background: var(--fourth-color);
     color: var(--fifth-color);
+}
+
+section#contact #wrapper form input[type="submit"]:focus {
+    outline: none !important;
+    background: var(--second-color);
+    color: var(--fifth-color);
+}
+
+section#contact #wrapper form label {
+    position: absolute;
+    display: none;
+    text-align: center;
+    color: var(--fifth-color);
+    margin: 0 auto;
+    margin-top: -16px;
+    margin-bottom: 15px;
+}
+
+.invalid {
+    border: 2px solid red;
+}
+
+.visible {
+    display: block !important;
 }
 
 
@@ -134,9 +172,18 @@ section#contact #wrapper form input[type="submit"]:hover {
         float: none;
         width: 100%;
         line-height: 0;
-    }    
+    }
 
     section#contact #wrapper #details span {
         font-size: medium;
+    }
+
+    section#contact #wrapper #details span svg {
+        margin-right: 6px;
+        margin-left: 3px;
+    }
+
+    section#contact #wrapper form label {
+        margin-top: -8px;
     }
 }

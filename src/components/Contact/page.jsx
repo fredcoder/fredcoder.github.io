@@ -12,7 +12,11 @@ class Page extends Component {
         super(props);
         this.submitForm = this.submitForm.bind(this);
         this.state = {
-            status: ""
+            status: "",
+            name: true,
+            email: true,
+            message: true,
+            warning:false
         };
     }
 
@@ -23,6 +27,39 @@ class Page extends Component {
     submitForm(ev) {
         ev.preventDefault();
         const form = ev.target;
+
+        /* Form validation */
+        var name = document.getElementById("name");
+        var email = document.getElementById("email");
+        var message = document.getElementById("message");
+        var warning = document.getElementById("warning");
+
+        name.removeAttribute("class");
+        email.removeAttribute("class");
+        message.removeAttribute("class");
+        
+        if (name.value === ""){
+            this.setState({ name: false });
+            name.setAttribute("class","invalid");
+        }
+            
+        if (email.value === ""){
+            this.setState({ email: false });
+            email.setAttribute("class","invalid");
+        }
+            
+        if (message.value === ""){
+            this.setState({ message: false });
+            message.setAttribute("class","invalid");
+        }
+
+        if (name.value === "" || email.value === "" || message.value === ""){
+            warning.setAttribute("class","visible");
+            this.setState({ warning: true });
+            return;
+        }
+        warning.removeAttribute("class");
+
         const data = new FormData(form);
         const xhr = new XMLHttpRequest();
         xhr.open(form.method, form.action);
@@ -49,7 +86,7 @@ class Page extends Component {
                     <h1 id="title">
                         Contact
                     </h1>
-                    <hr/>
+                    <hr />
                     <div id="details" data-aos="fade-up">
                         <span>
                             <FontAwesomeIcon icon={faPaperPlane} /> freddy.clavijo@gmail.com
@@ -67,9 +104,10 @@ class Page extends Component {
                         method="POST"
                         id="contact-form"
                         data-aos="fade-up">
-                        <input type="text" name="name" placeholder="Your Name" />
-                        <input type="email" name="_replyto" placeholder="Your Email" />
-                        <textarea name="message" placeholder="Message" data-gramm_editor="false"></textarea>
+                        <input id="name" type="text" name="name" placeholder="Your Name*" />
+                        <input id="email" type="email" name="_replyto" placeholder="Your Email*" />
+                        <textarea id="message" name="message" placeholder="Message*" data-gramm_editor="false"></textarea>
+                        <label id="warning">* Please fill out all fields</label>
                         <input type="submit" value="Send" />
                     </form>
                 </section>
