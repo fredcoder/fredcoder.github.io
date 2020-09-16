@@ -19,7 +19,7 @@ section#aboutMe::before {
 
 section#aboutMe #wrapper{
     color: #fff;
-    padding: 100px 12% 100px 12%;
+    padding: 100px 12% 200px 12%;
     /*border-top-left-radius: 55%;
     background: #000;*/
 }
@@ -27,7 +27,15 @@ section#aboutMe #wrapper{
 section#aboutMe #wrapper h1 {
     font-size: xxx-large;
     text-align: center;
+    margin-bottom: 15px;
+}
+
+section#aboutMe #wrapper hr {
+    color: var(--third-color);
+    border: 1px solid;
+    margin: 0 auto;
     margin-bottom: 5%;
+    width: 50%;
 }
 
 section#aboutMe img{
@@ -55,6 +63,10 @@ section#aboutMe #description{
 
     section#aboutMe #wrapper h1 {
         font-size: xx-large;
+    }
+
+    section#aboutMe #wrapper hr {
+        width: 100%;
     }
     
     section#aboutMe #description{ 

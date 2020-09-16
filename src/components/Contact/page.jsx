@@ -49,6 +49,11 @@ class Page extends Component {
                     <h1 id="title">
                         Contact
                     </h1>
+                    <div id="">
+                        <span>
+                            
+                        </span>
+                    </div>
                     <form
                         onSubmit={this.submitForm}
                         action="https://formspree.io/meqpjajk"

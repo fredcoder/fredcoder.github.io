@@ -27,6 +27,7 @@ class Page extends Component {
                     <h1 id="title" data-aos="fade-up">
                         Projects
                     </h1>
+                    <hr/>
                     <h2>
                         Weather App
                     </h2>
