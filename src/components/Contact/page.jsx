@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faPaperPlane, faMapMarkerAlt, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 class Page extends Component {
 
     constructor(props) {
@@ -49,9 +49,16 @@ class Page extends Component {
                     <h1 id="title">
                         Contact
                     </h1>
-                    <div id="">
+                    <hr/>
+                    <div id="details" data-aos="fade-up">
                         <span>
-                            
+                            <FontAwesomeIcon icon={faPaperPlane} /> freddy.clavijo@gmail.com
+                        </span>
+                        <span>
+                            <FontAwesomeIcon icon={faMobileAlt} /> +61 0416 844 858
+                        </span>
+                        <span>
+                            <FontAwesomeIcon icon={faMapMarkerAlt} /> Melbourne, VIC, Australia
                         </span>
                     </div>
                     <form
@@ -65,18 +72,6 @@ class Page extends Component {
                         <textarea name="message" placeholder="Message" data-gramm_editor="false"></textarea>
                         <input type="submit" value="Send" />
                     </form>
-                    <hr />
-                    <p id="description">
-                        <span>
-                            <a href="https://www.linkedin.com/in/freddy-ernesto-clavijo-fernandez-3b144453/"><FontAwesomeIcon icon={faLinkedin} /></a>
-                        </span>
-                        <span>
-                            <a href="https://www.instagram.com/fredcoder/"><FontAwesomeIcon icon={faInstagram} /></a>
-                        </span>
-                        <span>
-                            <a href="https://github.com/fredcoder"><FontAwesomeIcon icon={faGithub} /></a>
-                        </span>
-                    </p>
                 </section>
             </section>
         </React.Fragment>

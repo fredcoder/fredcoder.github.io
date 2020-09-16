@@ -1,16 +1,41 @@
-
 footer {
     position: absolute;
     line-height: 300%;
     text-align: center;
     width: 100%;
-    height: 50px;
-    background: var(--fifth-color);
+    background: var(--fourth-color);
     box-shadow: 0 0 5px var(--fourth-color);
 }
 
-footer p {
+footer #description {
+    text-align: center;
+}
+
+footer #description span {
+    margin: 0 auto;
+    margin: 6% 1%;
+    text-align: center;
+    display: inline-block;
+    width: 25%;
+}
+
+footer #description span svg {
+    font-size: xxx-large;
+    text-decoration: none;
+    color: white;
+}
+
+footer #description span svg:hover { 
+color: var(--second-color);
+}
+
+footer #copy {
+    border-top: 1px solid white;
     font-family: 'Montserrat-Medium';
     font-size: larger;
-    color: black;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
 }

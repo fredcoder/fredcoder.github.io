@@ -13,15 +13,11 @@ section#aboutMe::before {
     transform: skewY(-10deg);
     background-color: var(--first-color);
     box-shadow: 0px 0px 10px #0000008f;
-    /*-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);*/
 }  
 
 section#aboutMe #wrapper{
     color: #fff;
     padding: 100px 12% 200px 12%;
-    /*border-top-left-radius: 55%;
-    background: #000;*/
 }
 
 section#aboutMe #wrapper h1 {
@@ -57,6 +53,10 @@ section#aboutMe #description{
 
 @media only screen and (max-width:600px)
 {
+    section#aboutMe #wrapper{
+        padding: 100px 12%;
+    }
+
     section#aboutMe img{
         width: 35%;
     }
@@ -70,6 +70,6 @@ section#aboutMe #description{
     }
     
     section#aboutMe #description{ 
-        font-size: larger;
+        font-size: medium;
     }
 }

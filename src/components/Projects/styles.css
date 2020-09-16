@@ -1,5 +1,5 @@
 section#projects {
-    height: 120vh;
+    min-height: 120vh;
     overflow: hidden;
 }
 
@@ -12,9 +12,6 @@ section#projects::before {
     top: 0;
     -webkit-transform: skewY(-10deg);
     transform: skewY(-10deg);
-    /*background-color: white;*/
-    /*-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);*/
 }
 
 section#projects #wrapper {
@@ -38,12 +35,12 @@ section#projects #wrapper hr {
 }
 
 section#projects #wrapper h2 {
-    font-size: x-large;
+    font-size: xx-large;
     text-align: center;
     margin: 5% 0;
 }
 
-section#projects #wrapper .project-top{
+section#projects #wrapper .project-top {
     float: left;
     width: 48%;
     margin: 0 2% 0 0%;
@@ -56,22 +53,22 @@ section#projects #wrapper .project-top img {
     width: 90%;
 }
 
-section#projects #wrapper .project-bottom{
+section#projects #wrapper .project-bottom {
     float: left;
     width: 48%;
     margin: 0 0% 0 2%;
     overflow: hidden;
 }
 
-section#projects #wrapper .project-bottom .description{
+section#projects #wrapper .project-bottom .description {
     text-align: justify;
-    font-size: larger;
+    font-size: x-large;
     margin-bottom: 12px;
 }
 
 section#projects #wrapper .project-bottom .technologies {
     text-align: left;
-    font-size: larger;
+    font-size: x-large;
     margin-bottom: 12px;
 }
 
@@ -89,11 +86,11 @@ section#projects #wrapper .project-bottom .link {
 }
 
 section#projects #wrapper .project-bottom .link:hover {
-    background:  black;
+    background: black;
     color: white;
 }
 
-section#projects #wrapper .project-bottom .technologies span{
+section#projects #wrapper .project-bottom .technologies span {
     margin-left: 5px;
     vertical-align: text-top;
 }
@@ -105,9 +102,6 @@ section#projects #wrapper .project-bottom .technologies svg {
 }
 
 @media only screen and (max-width:600px) {
-    section#projects {
-        height: 120vh;
-    }
 
     section#projects #wrapper {
         padding: 20% 12% 0% 12%;
@@ -121,19 +115,26 @@ section#projects #wrapper .project-bottom .technologies svg {
         width: 100%;
     }
 
-    section#projects #wrapper .project-top{
-        width: 100%;
+    section#projects #wrapper h2 {
+        font-size: x-large;
     }
-    
-    section#projects #wrapper .project-bottom{
+
+    section#projects #wrapper .project-top {
         width: 100%;
     }
 
-    section#projects #wrapper .project-bottom .description{
-        margin-top: 12px;
+    section#projects #wrapper .project-bottom {
+        width: 100%;
+    }
+
+    section#projects #wrapper .project-bottom .description {
+        font-size: medium;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     section#projects #wrapper .project-bottom .technologies {
+        font-size: medium;
         text-align: center;
     }
 
@@ -141,4 +142,12 @@ section#projects #wrapper .project-bottom .technologies svg {
         margin: 0 auto;
     }
 
+}
+
+@media only screen and (max-width:1200px) {
+
+    section#projects #wrapper .project-bottom .description,
+    section#projects #wrapper .project-bottom .technologies {
+        font-size: larger;
+    }
 }
