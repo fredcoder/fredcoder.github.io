@@ -1,9 +1,12 @@
 section#home {
     height: 110vh;
+    width: 100%;
+    overflow:hidden ;
 }
 
 section#home #wrapper {
     position: absolute;
+    z-index: -2;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -30,6 +33,33 @@ section#home #wrapper #description a {
     color: var(--second-color);
 }
 
+section#home #water-mark img{
+    position: absolute;
+    top:10%;
+    left: 5%;
+    z-index: -2;
+    filter: opacity(0.1);
+}
+
+section#home #spinners{
+    position: absolute;
+    z-index: 0;
+    width: 50%;
+    height: 100%;
+    bottom: 0;
+    top: 65%;
+    left: 45%;
+    margin-right: 0;
+    margin-left: 0;
+    overflow: hidden;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+section#home #spinners img{
+    position: absolute;
+    animation: spin 60s infinite;
+}
+
 @media only screen and (max-width: 600px) {
 
     section#home #wrapper {
@@ -43,4 +73,25 @@ section#home #wrapper #description a {
     section#home #wrapper #description {
         font-size: larger;
     }
+
+    section#home #water-mark img{
+        position: absolute;
+        top:10%;
+        left: -20%;
+    }
+
+    section#home #spinners{
+        width: 75%;
+        top: 80%;
+        left: 20%; 
+    }
+}
+
+@keyframes spin{
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
 }

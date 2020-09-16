@@ -20,7 +20,7 @@ footer #description span {
 }
 
 footer #description span svg {
-    font-size: xx-large;
+    font-size: xxx-large;
     text-decoration: none;
     color: white;
 }
@@ -30,12 +30,14 @@ color: var(--second-color);
 }
 
 footer #copy {
-    border-top: 1px solid white;
+    border-top: 1px solid var(--first-color);
     font-family: 'Montserrat-Medium';
     font-size: larger;
     color: white;
 }
 
 @media only screen and (max-width: 600px) {
-
+    footer #description span svg {
+        font-size: xx-large;
+    }
 }
