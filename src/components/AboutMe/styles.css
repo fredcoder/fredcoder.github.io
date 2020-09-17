@@ -50,6 +50,28 @@ section#aboutMe #description{
     line-height: 28px;
 }
 
+section#aboutMe #wrapper h2 {
+    font-size: xx-large;
+    margin-bottom: 15px;
+}
+
+section#aboutMe #wrapper #skills{ 
+    line-height: 30px;
+}
+section#aboutMe #wrapper #skills span{ 
+    float: left;
+    width: 33%;
+    font-size: larger;
+}
+
+section#aboutMe #wrapper #skills span svg{ 
+    color: var(--third-color);
+    width: 20px;
+}
+
+section#aboutMe #wrapper #skills span:nth-child(3) svg:nth-child(2){ 
+    /*padding: 0px 4px;*/
+}
 
 @media only screen and (max-width:600px)
 {
@@ -71,5 +93,9 @@ section#aboutMe #description{
     
     section#aboutMe #description{ 
         font-size: large;
+    }
+
+    section#aboutMe #wrapper #skills span{         
+        width: 100%;        
     }
 }

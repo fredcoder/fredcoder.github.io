@@ -36,9 +36,9 @@ class Page extends Component {
                     </div>
                     <div className="project-bottom" data-aos="fade-left">
                         <p className="description">
-                            A very useful React application that gives users the current status of the daily and hourly weather forecast
-                            in a graphical and very detailed way. Through the geolocation api real-time data is obtained
-                            from OpenWeather global services.
+                        A very useful React application that provides users with the current status of 
+                        the daily and hourly weather forecast in a graphical and highly detailed way.  
+                        Through the geolocation api, real-time data is obtained from OpenWeather's global services.
                         </p>
                         <p className="technologies">
                             Developed with

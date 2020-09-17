@@ -6,7 +6,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs, faHtml5, faCss3Alt, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faJs, faHtml5, faCss3Alt, faReact, faMicrosoft } from '@fortawesome/free-brands-svg-icons'
+import { faDatabase, faRocket, faUserClock, faGlobe, faProjectDiagram, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
 
 class Page extends Component {
 
@@ -30,25 +31,34 @@ class Page extends Component {
                     <div data-aos="fade-up">
                         <hr />
                         <p id="description">
-                            I am a Full Stack Developer and system administrator with over 6+ years of experience in software engineering and developing new features and apps for different products and companies by using the best programming practices such as design patterns and readable documentation.
+                            I am a system engineer and Full Stack Developer with over 6+ years of experience in software engineering and web development. Throughout my career, I have built several apps and features for different products and companies by using the best programming practices such as design patterns, standardized source code and readable documentation.
                         <br /><br />
-                        I am a Full Stack Developer and system administrator with over 6+ years of experience in software engineering and developing new features and apps for different products and companies by using the best programming practices such as design patterns and readable documentation.
-                        <br /><br />
-                        I am a Full Stack Developer and system administrator with over 6+ years of experience in software engineering and developing new features and apps for different products and companies by using the best programming practices such as design patterns and readable documentation.
-                    </p>
+                        </p>
                     </div>
 
-                    {/*<h2 id="title" data-aos="fade-up">
-                        Skills
+                    <h2 id="title" data-aos="fade-up">
+                        My Skills
                     </h2>
                     <p id="skills" data-aos="fade-up">
                         <span>
-                            <FontAwesomeIcon icon={faJs} />
-                            <FontAwesomeIcon icon={faHtml5} />
-                            <FontAwesomeIcon icon={faCss3Alt} />
-                            <FontAwesomeIcon icon={faReact} />
+                            <FontAwesomeIcon icon={faHtml5} /> HTML 5
+                            <br /><FontAwesomeIcon icon={faCss3Alt} /> CSS 3
+                            <br /><FontAwesomeIcon icon={faJs} />  Javascript
+                            <br /><FontAwesomeIcon icon={faReact} /> React JS
                         </span>
-                    </p>*/}
+                        <span>
+                            <FontAwesomeIcon icon={faDatabase} /> SQL
+                            <br /><FontAwesomeIcon icon={faMicrosoft} /> .NET
+                            <br /><FontAwesomeIcon icon={faGlobe} /> WebAPI
+                            <br /><FontAwesomeIcon icon={faRocket} /> Azure DevOps
+                        </span>
+                        <span>
+                            <FontAwesomeIcon icon={faCodeBranch} />   GIT
+                            <br /><FontAwesomeIcon icon={faUserClock} /> Scrum
+                            <br /><FontAwesomeIcon icon={faProjectDiagram} /> Project Management
+                        </span>
+                    </p>
+                    <div className="clearfix"></div>
                 </section>
             </section>
         </React.Fragment>
