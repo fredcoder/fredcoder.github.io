@@ -25,11 +25,11 @@ class Page extends Component {
                     Hi! I'm Freddy
                 </h1>
                 <p id="description">
-                    I am a systems engineer with years of experience as a full stack developer.<br />
-                    I'm a problem solver, abstract thinker, and team player.
-                    Web development for me is both a hobby and a job.
+                    I am a Melbourne based system engineer and web developer.                    
+                <br />
+                    I create custom websites to help business do better online.                    
                 <br /><br />
-                Check out some of my work below, and please <a id="contactLink" href="#contact">get in touch!</a>
+                    Take a look at some of my work below and <a id="contactLink" href="#contact">get in touch!</a>
                 </p>
             </section>
             <div id="water-mark">

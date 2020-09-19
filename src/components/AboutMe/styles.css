@@ -1,4 +1,4 @@
-section#aboutMe{
+section#aboutMe {
     height: 100%;
 }
 
@@ -13,9 +13,9 @@ section#aboutMe::before {
     transform: skewY(-10deg);
     background-color: var(--first-color);
     box-shadow: 0px 0px 10px #0000008f;
-}  
+}
 
-section#aboutMe #wrapper{
+section#aboutMe #wrapper {
     color: #fff;
     padding: 100px 12% 200px 12%;
 }
@@ -34,14 +34,14 @@ section#aboutMe #wrapper hr {
     width: 50%;
 }
 
-section#aboutMe img{
+section#aboutMe img {
     width: 20%;
     display: block;
     margin: 0 auto 50px;
     border-radius: 50%;
 }
 
-section#aboutMe #description{ 
+section#aboutMe #description {
     text-align: justify;
     font-family: 'Montserrat-Light';
     font-size: x-large;
@@ -55,31 +55,31 @@ section#aboutMe #wrapper h2 {
     margin-bottom: 15px;
 }
 
-section#aboutMe #wrapper #skills{ 
+section#aboutMe #wrapper #skills {
     line-height: 30px;
 }
-section#aboutMe #wrapper #skills span{ 
+
+section#aboutMe #wrapper #skills span {
     float: left;
-    width: 33%;
-    font-size: larger;
+    width: 33.33%;
+    font-size: x-large;
 }
 
-section#aboutMe #wrapper #skills span svg{ 
+section#aboutMe #wrapper #skills span svg {
     color: var(--third-color);
     width: 20px;
 }
 
-section#aboutMe #wrapper #skills span:nth-child(3) svg:nth-child(2){ 
+section#aboutMe #wrapper #skills span:nth-child(3) svg:nth-child(2) {
     /*padding: 0px 4px;*/
 }
 
-@media only screen and (max-width:600px)
-{
-    section#aboutMe #wrapper{
+@media only screen and (max-width:600px) {
+    section#aboutMe #wrapper {
         padding: 100px 12%;
     }
 
-    section#aboutMe img{
+    section#aboutMe img {
         width: 35%;
     }
 
@@ -90,12 +90,19 @@ section#aboutMe #wrapper #skills span:nth-child(3) svg:nth-child(2){
     section#aboutMe #wrapper hr {
         width: 100%;
     }
-    
-    section#aboutMe #description{ 
+
+    section#aboutMe #description {
         font-size: large;
     }
 
-    section#aboutMe #wrapper #skills span{         
-        width: 100%;        
+    section#aboutMe #wrapper #skills span {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+
+    section#aboutMe #wrapper #skills span {
+        font-size: larger;
     }
 }

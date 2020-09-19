@@ -7,7 +7,7 @@ section#contact::before {
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 50%;
+    height: 100%;
     top: 0;
     -webkit-transform: skewY(-10deg);
     transform: skewY(-10deg);
@@ -50,9 +50,17 @@ section#contact #wrapper hr {
 section#contact #wrapper #details {
     float: left;
     width: 50%;
-    height: 100%;
+    width: 45%;
+    margin-left: 5%;
     margin: 0% 0;
     line-height: 200%;
+}
+
+section#contact #wrapper #details p{
+    font-size: xx-large;
+    font-family: Montserrat-Medium;
+    margin-left: 10%;
+    margin-bottom: 40px;
 }
 
 section#contact #wrapper #details span {
@@ -75,7 +83,7 @@ section#contact #wrapper form {
 section#contact #wrapper form input[type="text"],
 section#contact #wrapper form input[type="email"],
 section#contact #wrapper form textarea {
-    padding-left: 3%;
+    padding-left: 10px;
 }
 
 section#contact #wrapper form input,
@@ -152,7 +160,7 @@ section#contact #wrapper form label {
 }
 
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:800px) {
     section#contact #wrapper {}
 
     section#contact #wrapper {
@@ -174,6 +182,10 @@ section#contact #wrapper form label {
         line-height: 0;
     }
 
+    section#contact #wrapper #details p{
+        display: none;
+    }
+
     section#contact #wrapper #details span {
         font-size: medium;
     }
@@ -188,10 +200,9 @@ section#contact #wrapper form label {
     }
 }
 
-@media only screen and (max-width:1200px)
-{
-section#contact #wrapper #details span {
-        
+@media only screen and (max-width:1200px) {
+
+    section#contact #wrapper #details span {
         display: block;
         margin: 5% 2%;
         font-size: medium;

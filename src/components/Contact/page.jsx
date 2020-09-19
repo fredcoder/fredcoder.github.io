@@ -88,6 +88,7 @@ class Page extends Component {
                     </h1>
                     <hr />
                     <div id="details" data-aos="fade-up">
+                        <p>Get in touch!</p>
                         <span>
                             <FontAwesomeIcon icon={faPaperPlane} /> freddy.clavijo@gmail.com
                         </span>

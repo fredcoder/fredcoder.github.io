@@ -31,7 +31,16 @@ class Page extends Component {
                     <div data-aos="fade-up">
                         <hr />
                         <p id="description">
-                            I am a system engineer and Full Stack Developer with over 6+ years of experience in software engineering and web development. Throughout my career, I have built several apps and features for different products and companies by using the best programming practices such as design patterns, standardized source code and readable documentation.
+                            I am a system engineer and Full Stack Developer with over 6+ years of experience in software engineering
+                            and web development. Throughout my career I have worked for various technology companies, where I have
+                            managed to develop various web applications and features by using the best programming practices such as
+                            design patterns, standardized source code and human-readable technical documentation.
+                        <br /><br />
+                            Currently I am located in the city of Melbourne working for a software company where in addition to applying 
+                            my knowledge in frontend and backend development, I am also venturing into the development of multiplatform 
+                            mobile applications through the use of React Native.
+                        <br /><br />
+                            Whether you are interested in my work to be part of a development team or want me to contribute to a project, please leave me a message and I will get back to you as soon as possible.
                         <br /><br />
                         </p>
                     </div>
