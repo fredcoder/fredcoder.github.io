@@ -31,7 +31,7 @@ section#contact::after {
 
 section#contact #wrapper {
     color: white;
-    padding: 14% 12% 0% 12%;
+    padding: 14% 12% 4% 12%;
 }
 
 section#contact #wrapper h1 {
@@ -109,6 +109,8 @@ section#contact #wrapper form textarea {
     width: 100% !important;
     height: 100px !important;
     padding-top: 6px;
+    border-style: inset !important;
+    border-width: 2px !important;
     clear: both;
     /*Apple styles*/
     border-radius: 0 !important;
