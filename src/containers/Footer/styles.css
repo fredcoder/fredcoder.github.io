@@ -23,6 +23,7 @@ footer #description span svg {
     font-size: 48px;
     text-decoration: none;
     color: white;
+    background-color: transparent;
 }
 
 footer #description span svg:hover { 

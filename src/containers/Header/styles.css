@@ -82,13 +82,12 @@ header #wrapper #menu-max ul li a {
 }
 
 header #wrapper #menu-max ul li:hover {
-    /*background: var(--first-color);
-    box-shadow: 0px 0px 4px #0000008f;*/
+    background: var(--first-color);
+    box-shadow: 0px 0px 4px #0000008f;
 }
 
 header #wrapper #menu-max ul li:hover a {
-    color: var(--second-color);
-    ;
+    color: var(--fifth-color);
 }
 
 header #wrapper #menu-min {

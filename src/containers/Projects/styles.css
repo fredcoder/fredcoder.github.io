@@ -46,20 +46,26 @@ section#projects #wrapper #flex-box {
     align-items: center;
 }
 
-section#projects #wrapper #flex-box .project-top {
+section#projects #wrapper #flex-box-reverse {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+}
+
+.project-top {
     float: left;
     width: 48%;
     margin: 0 2% 0 0%;
 }
 
-section#projects #wrapper #flex-box .project-top img {
+.project-top img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
 }
 
-section#projects #wrapper #flex-box .project-bottom {
+.project-bottom {
     float: left;
     width: 48%;
     margin: 0 0% 0 2%;
@@ -67,26 +73,26 @@ section#projects #wrapper #flex-box .project-bottom {
     margin-bottom: 3%;
 }
 
-section#projects #wrapper #flex-box .project-bottom .description {
+.project-bottom .description {
     text-align: justify;
     font-size: x-large;
     margin-bottom: 12px;
 }
 
-section#projects #wrapper #flex-box .project-bottom .technologies {
-    text-align: left;
+.project-bottom .technologies {
+    text-align: center;
     font-size: x-large;
     font-weight: 700;
     margin-bottom: 12px;
 }
 
-section#projects #wrapper #flex-box .project-bottom .link {
+.project-bottom .link {
     font-family: Montserrat-Medium;
     font-size: larger;
     color: var(--fourth-color);
     text-align: center;
     text-decoration: none;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     display: block;
     background-color: var(--third-color);
     height: 40px;
@@ -94,26 +100,44 @@ section#projects #wrapper #flex-box .project-bottom .link {
     line-height: 200%;
 }
 
-section#projects #wrapper #flex-box .project-bottom .link:hover {
+.project-bottom .link:hover {
     background: black;
     color: white;
 }
 
-section#projects #wrapper #flex-box .project-bottom .technologies span {
+.project-bottom .technologies span {
     margin-left: 5px;
     vertical-align: text-top;    
 }
 
-section#projects #wrapper #flex-box .project-bottom .technologies svg {
+.project-bottom .technologies svg {
     margin: 0 0px 0 7px;
     font-size: x-large;
     color: var(--second-color);
 }
 
+section#projects #wrapper .separator-line {
+    border: 0px;
+}
+
+.project-top-inverse { 
+    float: right;
+    width: 48%;
+    margin: 0 0% 0 2%;
+    overflow: hidden;
+    margin-bottom: 3%;
+}
+
+.project-bottom-inverse {
+    float: right;
+    width: 48%;
+    margin: 0 2% 0 0%;
+}
+
 @media only screen and (max-width:1800px) {
 
-    section#projects #wrapper #flex-box .project-bottom .description,
-    section#projects #wrapper #flex-box .project-bottom .technologies {
+    .project-bottom .description,
+    .project-bottom .technologies {
         font-size: larger;
     }
 }
@@ -140,33 +164,37 @@ section#projects #wrapper #flex-box .project-bottom .technologies svg {
         display: block;
     }
 
-    section#projects #wrapper #flex-box .project-top {
+    section#projects #wrapper #flex-box-reverse{
+        display: block;
+    }
+
+    .project-top {
         width: 100%;
     }
 
-    section#projects #wrapper #flex-box .project-top img {
+    .project-top img {
         width: 100%;
     }
 
-    section#projects #wrapper #flex-box .project-bottom {
+    .project-bottom {
         width: 100%;
     }
 
-    section#projects #wrapper #flex-box .project-bottom .description {
+    .project-bottom .description {
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
-    section#projects #wrapper #flex-box .project-bottom .technologies {
+    .project-bottom .technologies {
         text-align: center;
     }
 
-    section#projects #wrapper #flex-box .project-bottom .description,
-    section#projects #wrapper #flex-box .project-bottom .technologies {
+    .project-bottom .description,
+    .project-bottom .technologies {
         font-size: large;
     }
 
-    section#projects #wrapper #flex-box .project-bottom .link {
+    .project-bottom .link {
         margin: 0 auto;
     }
 
