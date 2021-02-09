@@ -54,7 +54,7 @@ class Page extends Component {
                                     <FontAwesomeIcon icon={faReact} />
                                 </span>
                             </p>
-                            <LargeButton url={"https://fredcoder.github.io/weather/"} />
+                            <LargeButton url={"https://weather.fredcoder.dev/"} />
                         </div>
                     </div>
                     <hr className="separator-line" />

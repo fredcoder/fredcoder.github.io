@@ -34,7 +34,7 @@ section#home #wrapper #description a {
 }
 
 section#home #water-mark img{
-    position: absolute;
+    position: fixed;
     top:10%;
     left: 5%;
     z-index: -2;
@@ -75,7 +75,7 @@ section#home #spinners img{
     }
 
     section#home #water-mark img{
-        position: absolute;
+        position: fixed;
         top:10%;
         left: -20%;
     }
